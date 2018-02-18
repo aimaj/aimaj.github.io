@@ -4,6 +4,14 @@
 		<title>Aidan Majewski</title>
 	</head>
 	<body>
-		<img src="https://www.dropbox.com/s/bil79h4yve0x6fx/MVIMG_20180111_234133%20-%20Copy.jpg?dl=1"/>
+		<div id="myImage"/>
+		<script>
+			<!-- Load the image first, when finished loading, put the image in the myImage div -->
+			var image = new Image();
+			image.onload = function() {
+				document.getElementById("myImage").appendChild(image);
+			};
+			image.src = "https://www.dropbox.com/s/bil79h4yve0x6fx/MVIMG_20180111_234133%20-%20Copy.jpg?dl=1";
+		</script>
 	</body>
 </html>
