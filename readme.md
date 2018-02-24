@@ -1,7 +1,3 @@
-lets split
-dz60
-planter box
-succulents
-
-https://www.w3schools.com/howto/howto_js_lightbox.asp
-https://github.com/brutaldesign/swipebox
+website with
+  links to websites
+  links to imgur albums
