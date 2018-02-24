@@ -21,7 +21,7 @@
 
 		<div class="sixteen wide column">
 
-			<img class="ui centered medium circular image" src="images/portrait.jpg">
+			<img class="ui centered medium circular image" id="portrait" src="images/transparent.gif">
 
 		</div>
 
@@ -47,14 +47,14 @@
 			<div class="ui centered special cards">
 				<div class="card">
 					<div class="blurring dimmable image">
-							<div class="ui dimmer">
-								<div class="content">
-									<div class="center">
-										<a class="ui inverted button" target="_blank" href="https://imgur.com/a/wyirW">View Album</a>
-									</div>
+						<div class="ui dimmer">
+							<div class="content">
+								<div class="center">
+									<a class="ui inverted button" target="_blank" href="https://imgur.com/a/wyirW">View Album</a>
 								</div>
 							</div>
-						<img src="images/dz60.jpg" />
+						</div>
+						<img id="dz60" src="images/transparent.gif" />
 					</div>
 					<div class="content">
 						<div class="header">DZ60</div>
@@ -73,15 +73,15 @@
 				</div>
 
 				<div class="ui card">
-						<div class="blurring dimmable image">
-								<div class="ui dimmer">
-									<div class="content">
-										<div class="center">
-											<a class="ui inverted button" target="_blank" href="https://imgur.com/a/yiPKX">View Album</a>
-										</div>
-									</div>
+					<div class="blurring dimmable image">
+						<div class="ui dimmer">
+							<div class="content">
+								<div class="center">
+									<a class="ui inverted button" target="_blank" href="https://imgur.com/a/yiPKX">View Album</a>
 								</div>
-						<img src="images/split.jpg" />
+							</div>
+						</div>
+						<img id="split" src="images/transparent.gif" />
 					</div>
 					</script>
 					<div class="content">
@@ -103,15 +103,15 @@
 
 
 				<div class="ui card">
-						<div class="blurring dimmable image">
-								<div class="ui dimmer">
-									<div class="content">
-										<div class="center">
-											<a class="ui inverted button" target="_blank" href="https://imgur.com/a/BbMIS">View Album</a>
-										</div>
-									</div>
+					<div class="blurring dimmable image">
+						<div class="ui dimmer">
+							<div class="content">
+								<div class="center">
+									<a class="ui inverted button" target="_blank" href="https://imgur.com/a/BbMIS">View Album</a>
 								</div>
-						<img src="images/box.jpg" />
+							</div>
+						</div>
+						<img id="box" src="images/transparent.gif" />
 					</div>
 					</script>
 					<div class="content">
@@ -132,9 +132,41 @@
 			</div>
 
 		</div>
-<script>$('.special.cards .image').dimmer({
-		on: 'hover'
-	});</script>
+
+
+		<script>
+			$('.special.cards .image').dimmer({
+				on: 'hover'
+			});
+		</script>
+
+
+		<script>
+			var portraitImage = new Image();
+			portraitImage.onload = function () {
+				document.getElementById("portrait").src = this.src;
+			};
+			portraitImage.src =
+				"https://www.dropbox.com/s/8gpvwl24ko84ueh/00100dPORTRAIT_00100_BURST20171105163503680_COVER_1.jpg?dl=1";
+
+			var dz60Image = new Image();
+			dz60Image.onload = function () {
+				document.getElementById("dz60").src = this.src;
+			};
+			dz60Image.src = "https://www.dropbox.com/s/bil79h4yve0x6fx/MVIMG_20180111_234133%20-%20Copy.jpg?dl=1";
+
+			var splitImage = new Image();
+			splitImage.onload = function () {
+				document.getElementById("split").src = this.src;
+			};
+			splitImage.src = "https://www.dropbox.com/s/nix68gcid21y28l/IMG_20170901_190016.jpg?dl=1";
+
+			var boxImage = new Image();
+			boxImage.onload = function () {
+				document.getElementById("box").src = this.src;
+			};
+			boxImage.src = "https://www.dropbox.com/s/nbmw16qtb9oh9vf/MVIMG_20171216_142948.jpg?dl=1";
+		</script>
 
 </body>
 
