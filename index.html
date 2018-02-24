@@ -21,7 +21,7 @@
 
 		<div class="sixteen wide column">
 
-			<img class="ui centered medium circular image" src="images/transparent.gif">
+			<img class="ui centered medium circular image" src="images/portrait.jpg">
 
 		</div>
 
@@ -45,16 +45,16 @@
 
 		<div class="sixteen wide column">
 			<div class="ui centered special cards">
-				<div class="ui card">
-					<div class="blurring dimmable image" id="dz60">
+				<div class="card">
+					<div class="blurring dimmable image">
 							<div class="ui dimmer">
 								<div class="content">
 									<div class="center">
-										<div class="ui inverted button">View Album</div>
+										<a class="ui inverted button" target="_blank" href="https://imgur.com/a/wyirW">View Album</a>
 									</div>
 								</div>
 							</div>
-						<img src="images/transparent.gif" />
+						<img src="images/dz60.jpg" />
 					</div>
 					<div class="content">
 						<div class="header">DZ60</div>
@@ -73,8 +73,15 @@
 				</div>
 
 				<div class="ui card">
-					<div class="image" id="split">
-						<img src="images/transparent.gif" />
+						<div class="blurring dimmable image">
+								<div class="ui dimmer">
+									<div class="content">
+										<div class="center">
+											<a class="ui inverted button" target="_blank" href="https://imgur.com/a/yiPKX">View Album</a>
+										</div>
+									</div>
+								</div>
+						<img src="images/split.jpg" />
 					</div>
 					</script>
 					<div class="content">
@@ -96,8 +103,15 @@
 
 
 				<div class="ui card">
-					<div class="image" id="box">
-						<img src="images/transparent.gif" />
+						<div class="blurring dimmable image">
+								<div class="ui dimmer">
+									<div class="content">
+										<div class="center">
+											<a class="ui inverted button" target="_blank" href="https://imgur.com/a/BbMIS">View Album</a>
+										</div>
+									</div>
+								</div>
+						<img src="images/box.jpg" />
 					</div>
 					</script>
 					<div class="content">
@@ -117,52 +131,10 @@
 				</div>
 			</div>
 
-
 		</div>
-
-
-		<script>
-
-			var img = new Image();
-			img.onload = function () {
-				var imagez = document.images[0];
-				imagez.src = this.src;
-				imagez.style = this.style;
-			};
-			img.src = "https://www.dropbox.com/s/8gpvwl24ko84ueh/00100dPORTRAIT_00100_BURST20171105163503680_COVER_1.jpg?dl=1";
-			img.style = "max-width: 100%; height: auto;";
-
-
-			var image = new Image();
-			image.onload = function () {
-				var imagez = document.images[1];
-				imagez.src = this.src;
-				imagez.style = this.style;
-			};
-			image.src = "https://www.dropbox.com/s/bil79h4yve0x6fx/MVIMG_20180111_234133%20-%20Copy.jpg?dl=1";
-			image.style = "max-width: 100%; height: auto;";
-
-			var image2 = new Image();
-			image2.onload = function () {
-				var imagez = document.images[2];
-				imagez.src = this.src;
-				imagez.style = this.style;
-			};
-			image2.src = "https://www.dropbox.com/s/nix68gcid21y28l/IMG_20170901_190016.jpg?dl=1";
-			image2.style = "max-width: 100%; height: auto;";
-
-
-			var image3 = new Image();
-			image3.onload = function () {
-				var imagez = document.images[3];
-				imagez.src = this.src;
-				imagez.style = this.style;
-			};
-			image3.src = "https://www.dropbox.com/s/nbmw16qtb9oh9vf/MVIMG_20171216_142948.jpg?dl=1";
-			image3.style = "max-width: 100%; height: auto;";
-		</script>
-
-
+<script>$('.special.cards .image').dimmer({
+		on: 'hover'
+	});</script>
 
 </body>
 
