@@ -23,16 +23,18 @@
 		</div>
 
 		<div class="sixteen wide column">
-
-			<img class="ui centered medium circular image" id="portrait" src="images/transparent.gif">
-
 		</div>
 
 		<div class="sixteen wide column">
-			<div class="ui centered card">
+			<div class="ui centered special cards">
+
+			<div class="ui card">
+				<div class="image">
+					<img id="portrait" src="images/transparent.gif" />
+				</div>
 				<div class="content">
 						<div class="center aligned header">
-							<p>Hi, I'm Aidan. I love UMLet & keyboards.</p></div>
+							<p>Hi, I'm Aidan. I am a software engineer & I love side projects.</p></div>
 						<div class="center aligned description">
 							<a href="https://www.linkedin.com/in/aidan-majewski/" class="ui label">LinkedIn
 							</a>
@@ -43,11 +45,63 @@
 						</div>
 				</div>
 			</div>
-		</div>
 
-		<div class="sixteen wide column">
-			<div class="ui centered special cards">
-				<div class="card">
+				<div class="ui card">
+					<div class="blurring dimmable image">
+						<div class="ui dimmer">
+							<div class="content">
+								<div class="center">
+									<a class="ui inverted button" target="_blank" href="https://imgur.com/a/W96Gv63">View Album</a>
+								</div>
+							</div>
+						</div>
+						<img id="oscar" src="images/transparent.gif" />
+					</div>
+					<div class="content">
+						<div class="header">Oscar the Grouch Chalk Bag</div>
+						<div class="meta">
+							<a>Climbing Chalk Bag</a>
+						</div>
+						<div class="description">
+							A DIY chalk bag for bouldering
+						</div>
+					</div>
+					<div class="extra content">
+						<span class="right floated">
+							Feb 2019
+						</span>
+					</div>
+				</div>
+
+
+				<div class="ui card">
+					<div class="blurring dimmable image">
+						<div class="ui dimmer">
+							<div class="content">
+								<div class="center">
+									<a class="ui inverted button" target="_blank" href="https://imgur.com/a/Z60xpLv">View Album</a>
+								</div>
+							</div>
+						</div>
+						<img id="quefrency" src="images/transparent.gif" />
+					</div>
+					<div class="content">
+						<div class="header">Quefrency Split Keyboard</div>
+						<div class="meta">
+							<a>65% Split Keyboard</a>
+						</div>
+						<div class="description">
+							A split keyboard with laser cut acrylic case
+						</div>
+					</div>
+					<div class="extra content">
+						<span class="right floated">
+							Jan 2019
+						</span>
+					</div>
+				</div>
+
+				<div class="ui card">
 					<div class="blurring dimmable image">
 						<div class="ui dimmer">
 							<div class="content">
@@ -74,6 +128,35 @@
 					</div>
 				</div>
 
+
+
+				<div class="ui card">
+					<div class="blurring dimmable image">
+						<div class="ui dimmer">
+							<div class="content">
+								<div class="center">
+									<a class="ui inverted button" target="_blank" href="https://imgur.com/a/BbMIS">View Album</a>
+								</div>
+							</div>
+						</div>
+						<img id="box" src="images/transparent.gif" />
+					</div>
+					<div class="content">
+						<div class="header">Herb Box</div>
+						<div class="meta">
+							<a>Cypress Pine & Merbau Box</a>
+						</div>
+						<div class="description">
+							A handmade wooden planter box for herbs
+						</div>
+					</div>
+					<div class="extra content">
+						<span class="right floated">
+							Jan 2018
+						</span>
+					</div>
+				</div>
+
 				<div class="ui card">
 					<div class="blurring dimmable image">
 						<div class="ui dimmer">
@@ -85,7 +168,6 @@
 						</div>
 						<img id="split" src="images/transparent.gif" />
 					</div>
-					</script>
 					<div class="content">
 						<div class="header">Let's Split</div>
 						<div class="meta">
@@ -104,33 +186,6 @@
 
 
 
-				<div class="ui card">
-					<div class="blurring dimmable image">
-						<div class="ui dimmer">
-							<div class="content">
-								<div class="center">
-									<a class="ui inverted button" target="_blank" href="https://imgur.com/a/BbMIS">View Album</a>
-								</div>
-							</div>
-						</div>
-						<img id="box" src="images/transparent.gif" />
-					</div>
-					</script>
-					<div class="content">
-						<div class="header">Herb Box</div>
-						<div class="meta">
-							<a>Cypress Pine & Merbau Box</a>
-						</div>
-						<div class="description">
-							A handmade wooden planter box for herbs
-						</div>
-					</div>
-					<div class="extra content">
-						<span class="right floated">
-							Jan 2018
-						</span>
-					</div>
-				</div>
 			</div>
 
 		</div>
@@ -141,7 +196,7 @@
 
 
 		<script>
-			$('.special.cards .image').dimmer({
+			$('.special.cards .blurring.image').dimmer({
 				on: 'hover'
 			});
 		</script>
@@ -153,13 +208,13 @@
 				document.getElementById("portrait").src = this.src;
 			};
 			portraitImage.src =
-				"https://www.dropbox.com/s/8gpvwl24ko84ueh/00100dPORTRAIT_00100_BURST20171105163503680_COVER_1.jpg?dl=1";
+				"https://www.dropbox.com/s/mgys3kzh0zzkvuc/portrait.jpg?dl=1";
 
 			var dz60Image = new Image();
 			dz60Image.onload = function () {
 				document.getElementById("dz60").src = this.src;
 			};
-			dz60Image.src = "https://www.dropbox.com/s/bil79h4yve0x6fx/MVIMG_20180111_234133%20-%20Copy.jpg?dl=1";
+			dz60Image.src = "https://www.dropbox.com/s/wpu217197wjavwq/dz60.jpg?dl=1";
 
 			var splitImage = new Image();
 			splitImage.onload = function () {
@@ -172,6 +227,22 @@
 				document.getElementById("box").src = this.src;
 			};
 			boxImage.src = "https://www.dropbox.com/s/nbmw16qtb9oh9vf/MVIMG_20171216_142948.jpg?dl=1";
+
+
+			var oscarImage = new Image();
+			oscarImage.onload = function () {
+				document.getElementById("oscar").src = this.src;
+			};
+			oscarImage.src = "https://www.dropbox.com/s/biauk5aozkw1kzx/oscar-2.jpg?dl=1";
+
+
+
+			var quefrencyImage = new Image();
+			quefrencyImage.onload = function () {
+				document.getElementById("quefrency").src = this.src;
+			};
+			quefrencyImage.src = "https://www.dropbox.com/s/9kj6zsl6zacqptj/split.jpg?dl=1";
+
 		</script>
 
 </body>
