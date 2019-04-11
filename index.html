@@ -46,12 +46,39 @@
 				</div>
 			</div>
 
+			<div class="ui card">
+				<div class="blurring dimmable image">
+					<div class="ui dimmer">
+						<div class="content">
+							<div class="center">
+								<a class="ui inverted button" target="_blank" href="https://imgur.com/a/xVRV803">Album in new tab</a>
+							</div>
+						</div>
+					</div>
+					<img id="squid" src="images/transparent.gif" />
+				</div>
+				<div class="content">
+					<div class="header">Quad Arm Cube Soldering Squid</div>
+					<div class="meta">
+						<a>Helping Hand/Soldering Squid</a>
+					</div>
+					<div class="description">
+						Hand made tool for holding objects
+					</div>
+				</div>
+				<div class="extra content">
+					<span class="right floated">
+						Mar 2019
+					</span>
+				</div>
+			</div>
+
 				<div class="ui card">
 					<div class="blurring dimmable image">
 						<div class="ui dimmer">
 							<div class="content">
 								<div class="center">
-									<a class="ui inverted button" target="_blank" href="https://imgur.com/a/W96Gv63">View Album</a>
+									<a class="ui inverted button" target="_blank" href="https://imgur.com/a/W96Gv63">Album in new tab</a>
 								</div>
 							</div>
 						</div>
@@ -79,7 +106,7 @@
 						<div class="ui dimmer">
 							<div class="content">
 								<div class="center">
-									<a class="ui inverted button" target="_blank" href="https://imgur.com/a/Z60xpLv">View Album</a>
+									<a class="ui inverted button" target="_blank" href="https://imgur.com/a/Z60xpLv">Album in new tab</a>
 								</div>
 							</div>
 						</div>
@@ -106,7 +133,7 @@
 						<div class="ui dimmer">
 							<div class="content">
 								<div class="center">
-									<a class="ui inverted button" target="_blank" href="https://imgur.com/a/wyirW">View Album</a>
+									<a class="ui inverted button" target="_blank" href="https://imgur.com/a/wyirW">Album in new tab</a>
 								</div>
 							</div>
 						</div>
@@ -135,7 +162,7 @@
 						<div class="ui dimmer">
 							<div class="content">
 								<div class="center">
-									<a class="ui inverted button" target="_blank" href="https://imgur.com/a/BbMIS">View Album</a>
+									<a class="ui inverted button" target="_blank" href="https://imgur.com/a/BbMIS">Album in new tab</a>
 								</div>
 							</div>
 						</div>
@@ -162,7 +189,7 @@
 						<div class="ui dimmer">
 							<div class="content">
 								<div class="center">
-									<a class="ui inverted button" target="_blank" href="https://imgur.com/a/yiPKX">View Album</a>
+									<a class="ui inverted button" target="_blank" href="https://imgur.com/a/yiPKX">Album in new tab</a>
 								</div>
 							</div>
 						</div>
@@ -235,7 +262,11 @@
 			};
 			oscarImage.src = "https://www.dropbox.com/s/biauk5aozkw1kzx/oscar-2.jpg?dl=1";
 
-
+			var squidImage = new Image();
+			squidImage.onload = function () {
+				document.getElementById("squid").src = this.src;
+			};
+			squidImage.src = "https://www.dropbox.com/s/9dbzhkdtufugbdu/squid.jpg?dl=1";
 
 			var quefrencyImage = new Image();
 			quefrencyImage.onload = function () {
