@@ -49,6 +49,33 @@
 					<div class="ui dimmer">
 						<div class="content">
 							<div class="center">
+								<a class="ui inverted button" target="_blank" href="https://imgur.com/a/47h6YNK">Album in new tab</a>
+							</div>
+						</div>
+					</div>
+					<img id="switch" src="images/transparent.gif" />
+				</div>
+				<div class="content">
+					<div class="header">Ikea themed Nintendo Switch Case</div>
+					<div class="meta">
+						<a>Device Carrying Case</a>
+					</div>
+					<div class="description">
+						Roll top bag built from a blue Ikea tote and EVA foam.
+					</div>
+				</div>
+				<div class="extra content">
+					<span class="right floated">
+						Dec 2019
+					</span>
+				</div>
+			</div>
+
+			<div class="ui card">
+				<div class="blurring dimmable image">
+					<div class="ui dimmer">
+						<div class="content">
+							<div class="center">
 								<a class="ui inverted button" target="_blank" href="https://imgur.com/a/xVRV803">Album in new tab</a>
 							</div>
 						</div>
@@ -295,6 +322,12 @@
 			};
 			firefoxImage.src = "https://www.dropbox.com/s/gohetcpp481ugqf/icon.png?dl=1";
 
+
+			var switchImage = new Image();
+			switchImage.onload = function () {
+				document.getElementById("switch").src = this.src;
+			};
+			switchImage.src = "https://www.dropbox.com/s/8i6v0p6dx1fh9x3/switch-preview.jpg?dl=1";
 		</script>
 
 </body>
