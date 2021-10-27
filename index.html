@@ -49,6 +49,33 @@
 					<div class="ui dimmer">
 						<div class="content">
 							<div class="center">
+								<a class="ui inverted button" target="_blank" href="https://imgur.com/a/nUr4FKJ">Album in new tab</a>
+							</div>
+						</div>
+					</div>
+					<img id="hotdog" src="images/transparent.gif" />
+				</div>
+				<div class="content">
+					<div class="header">Hotdog velcro dog toy</div>
+					<div class="meta">
+						<a>Dog toy</a>
+					</div>
+					<div class="description">
+						A stuffed toy, with 4 separate parts with velcro, for a pet to tear apart again and again.
+					</div>
+				</div>
+				<div class="extra content">
+					<span class="right floated">
+						Oct 2021
+					</span>
+				</div>
+			</div>
+
+			<div class="ui card">
+				<div class="blurring dimmable image">
+					<div class="ui dimmer">
+						<div class="content">
+							<div class="center">
 								<a class="ui inverted button" target="_blank" href="https://imgur.com/a/KIcj94O">Album in new tab</a>
 							</div>
 						</div>
@@ -395,6 +422,13 @@
 				document.getElementById("storage").src = this.src;
 			};
 			storageImage.src = "https://www.dropbox.com/s/78ihlmheuusjlej/box.jpg?dl=1";
+
+
+			var hotdogImage = new Image();
+			hotdogImage.onload = function () {
+				document.getElementById("hotdog").src = this.src;
+			};
+			hotdogImage.src = "https://www.dropbox.com/s/dp6o7z6qojwlyy8/hotdog.jpg?dl=1";
 
 
 
